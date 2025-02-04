@@ -3,11 +3,11 @@ import { hash, verify } from 'argon2';
 import { generarJWT } from '../helpers/generate-jwt.js';
 
 export const login = async (req, res) => {
-    
+
     const { email, password, username } = req.body;
 
     try {
-        
+
         const lowerEmail = email ? email.toLowerCase() : null;
         const lowerUsername = username ? username.toLowerCase() : null;
 
@@ -18,23 +18,23 @@ export const login = async (req, res) => {
         if (!user) {
             return res.status(400).json({
                 msg: 'Incorrect credentials - email does not exist in the database!'
-            })
+            });
         }
 
         if (!user.estado) {
             return res.status(400).json({
                 msg: 'User does not exist in the database!'
-            })
+            });
         }
 
         const validPassword = await verify(user.password, password);
         if (!validPassword) {
             return res.status(400).json({
                 msg: 'The password is incorrect!'
-            })
+            });
         }
 
-        const token = await generarJWT( user.id );
+        const token = await generarJWT(user.id);
 
         return res.status(200).json({
             msg: 'Login OK!',
@@ -46,8 +46,10 @@ export const login = async (req, res) => {
         })
 
     } catch (e) {
+
         console.log(e);
-        req.status(500).json({
+
+        return res.status(500).json({
             message: "Server error!",
             error: e.message
         })
@@ -60,7 +62,7 @@ export const register = async (req, res) => {
 
         let profilePicture = req.file ? req.file.filename : null;
 
-        const encryptedPassword = await hash (data.password);
+        const encryptedPassword = await hash(data.password);
 
         const user = await Usuario.create({
             name: data.name,
@@ -81,11 +83,13 @@ export const register = async (req, res) => {
         });
 
     } catch (error) {
+
         console.log(error);
 
         return res.status(500).json({
             message: "User registration failed!",
-            error: error.message
+            error: err.message
         })
+
     }
 }
