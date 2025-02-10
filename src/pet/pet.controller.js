@@ -103,6 +103,28 @@ export const searchPet = async (req, res) => {
     }
 }
 
+export const updatePet = async (req, res = response) => {
+    try {
+        
+        const { id } = req.params;
+
+        const pet = await Pet.findByIdAndUpdate(id, data, { new: true });
+
+        res.status(200).json({
+            success: true,
+            msg: 'Pet update!',
+            pet
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error update!',
+            error
+        })
+    }
+}
+
 export const deletePet = async (req, res) => {
     
     const { id } = req.params;
