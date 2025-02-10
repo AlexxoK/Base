@@ -1,0 +1,62 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Users",
+    "collectionId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
+    "dateExported": "2025-02-10T16:32:56.917Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a1faa54c-545c-463f-b762-0e4360fde18c",
+            "colId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-10T13:08:30.926Z",
+            "modified": "2025-02-10T15:25:44.221Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"luis@gmail.com\",\n  \"password\": \"luisin027\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9d3d9027-a160-4afd-8db5-3542a361eec9",
+            "colId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3000/adoptionSystem/v1/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-10T13:08:41.262Z",
+            "modified": "2025-02-10T15:24:37.667Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Luis\",\n  \"surname\": \"Luisin\",\n  \"username\": \"LuisK\",\n  \"email\": \"luis@gmail.com\",\n  \"password\": \"luisin027\",\n  \"profilePicture\": \"\",\n  \"phone\": \"87654321\",\n  \"role\": \"USER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b93f838f-1550-4c0b-bb57-e00cc96117f1",
+            "colId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/67a9fa6bfd2de04c5a7f44e5",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-10T15:22:37.926Z",
+            "modified": "2025-02-10T15:26:15.834Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWEzNWNmODczYjUzZTQzNDEwZDIiLCJpYXQiOjE3MzkyMDExNDQsImV4cCI6MTczOTIwNDc0NH0.J-Ja8W0UN9ZlkRx-w-W51obuomI9aKXS26ukoAPQsdc"
+                }
+            ]
+        }
+    ],
+    "ref": "lWFfDgCnH9XhE8PQa5AlLGt4iEKeBgRauAR_bKjsF-dHr3JvtZX7Qde1yG8jlNnTV3na-nVx-_8i1Gx4fvnqxg"
+}

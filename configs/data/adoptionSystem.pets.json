@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "67aa007e1a0330395b0608cf"
+  },
+  "name": "Loky",
+  "description": "Gato de de pelaje gris y colores obscuros",
+  "age": 4,
+  "type": "NI IDEA",
+  "keeper": {
+    "$oid": "67a9fa6bfd2de04c5a7f44e5"
+  },
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67aa0bff35cb166fa32abd42"
+  },
+  "name": "Rita",
+  "description": "Gato de de pelaje negro con blanco",
+  "age": 3,
+  "type": "GATO",
+  "keeper": {
+    "$oid": "67a9fa6bfd2de04c5a7f44e5"
+  },
+  "status": false
+}]
