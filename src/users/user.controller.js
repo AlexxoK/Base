@@ -83,6 +83,33 @@ export const updateUser = async (req, res = response) => {
     }
 }
 
+export const updatePassword = async (req, res = response) => {
+    try {
+        
+        const { id } = req.params;
+        const { password } = req.body;
+
+        if (password) {
+            data.password = await hash(password)
+        }
+
+        const user = await User.findByIdAndUpdate(id, { new: true });
+
+        res.status(200).json({
+            success: true,
+            msg: 'Password update!',
+            user
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error update!',
+            error
+        })
+    }
+}
+
 export const deleteUser = async (req, res) => {
     try {
         

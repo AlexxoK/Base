@@ -1,42 +1,63 @@
 [{
   "_id": {
-    "$oid": "67a9fa6bfd2de04c5a7f44e5"
+    "$oid": "67ab52d98089adac5919fbdf"
   },
-  "name": "Monterroso",
-  "surname": "Alexxo",
-  "username": "AlexxoK",
+  "name": "Diego",
+  "surname": "Monterroso",
+  "username": "Alexxo",
   "email": "alexxo@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$dUQlfUVmx1bkOe9nOjnvcA$B97c08gHEqpFtJsMbUPoxGoQxfzEt9Neo9L/jqL9MZY",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$e4rW+L6sYEzzX9+dYVpf0A$VZMy63mdAq58OD5EdITg0txDRtzzYoN8pNXNIGKUaVs",
   "phone": "12345678",
   "role": "ADMIN_ROLE",
   "estado": true,
   "google": false,
   "createdAt": {
-    "$date": "2025-02-10T13:08:59.664Z"
+    "$date": "2025-02-11T13:38:33.597Z"
   },
   "updatedAt": {
-    "$date": "2025-02-10T13:08:59.664Z"
+    "$date": "2025-02-11T13:38:33.597Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "67aa1a35cf873b53e43410d2"
+    "$oid": "67ab53118089adac5919fbe3"
   },
-  "name": "Luis",
-  "surname": "Luisin",
-  "username": "LuisK",
-  "email": "luis@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$kU6lSlTj1z7EK1xpiYgKOA$+KSg8HjyOajjr8NBWrO/K7NRkjLP6FVHroWt1z8dGMU",
+  "name": "Carlos",
+  "surname": "Orozco",
+  "username": "OrozcoK",
+  "email": "orozco@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$+df+thRkZSO+BuQCjaW3GA$3q1p3LL8GHEtaYXi0MeUB6ll12Xof7wvZCzZFauBfUs",
   "phone": "87654321",
   "role": "USER_ROLE",
   "estado": true,
   "google": false,
   "createdAt": {
-    "$date": "2025-02-10T15:24:37.660Z"
+    "$date": "2025-02-11T13:39:29.232Z"
   },
   "updatedAt": {
-    "$date": "2025-02-10T15:25:02.998Z"
+    "$date": "2025-02-11T16:13:28.185Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ab537d8089adac5919fbe9"
+  },
+  "name": "Javier",
+  "surname": "Mula",
+  "username": "MulaK",
+  "email": "josue@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Z+YEZsa/rFd482ZCona/jw$iV5ftBhtxC0HdAUAiHxSoGa7u8CwZH0+pu17Lh6vZlQ",
+  "phone": "55556666",
+  "role": "USER_ROLE",
+  "estado": false,
+  "google": false,
+  "createdAt": {
+    "$date": "2025-02-11T13:41:17.091Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T13:44:08.497Z"
   },
   "__v": 0
 }]

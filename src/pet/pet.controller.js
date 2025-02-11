@@ -1,7 +1,5 @@
 import User from "../users/user.model.js";
 import Pet from "../pet/pet.model.js";
-import { query } from "express";
-import { Query } from "mongoose";
 
 export const savePet = async (req, res) => {
     try {
@@ -107,6 +105,7 @@ export const updatePet = async (req, res = response) => {
     try {
         
         const { id } = req.params;
+        const data = req.body;
 
         const pet = await Pet.findByIdAndUpdate(id, data, { new: true });
 

@@ -9,6 +9,7 @@ import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import authRoutes from '../src/auth/auth.routes.js'
 import userRoutes from "../src/users/user.routes.js";
 import petRoutes from "../src/pet/pet.routes.js";
+import dateRoutes from "../src/date/date.routes.js";
 
 const middlewares = (app) =>{
     app.use(express.urlencoded({ extended: false }));
@@ -23,6 +24,7 @@ const routes = (app) =>{
     app.use("/adoptionSystem/v1/auth", authRoutes);
     app.use("/adoptionSystem/v1/users", userRoutes);
     app.use("/adoptionSystem/v1/pets", petRoutes);
+    app.use("/adoptionSystem/v1/dates", dateRoutes);
 }
 
 const conectarDB = async () =>{

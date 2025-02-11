@@ -1,62 +1,132 @@
 {
     "clientName": "Thunder Client",
-    "collectionName": "Users",
-    "collectionId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
-    "dateExported": "2025-02-10T16:32:56.917Z",
+    "collectionName": "users",
+    "collectionId": "f850aa58-8eee-441f-a752-f09e0eacc836",
+    "dateExported": "2025-02-11T17:51:42.129Z",
     "version": "1.2",
     "folders": [],
     "requests": [
         {
-            "_id": "a1faa54c-545c-463f-b762-0e4360fde18c",
-            "colId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
-            "containerId": "",
-            "name": "login",
-            "url": "http://localhost:3000/adoptionSystem/v1/auth/login",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2025-02-10T13:08:30.926Z",
-            "modified": "2025-02-10T15:25:44.221Z",
-            "headers": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"email\": \"luis@gmail.com\",\n  \"password\": \"luisin027\"\n}",
-                "form": []
-            }
-        },
-        {
-            "_id": "9d3d9027-a160-4afd-8db5-3542a361eec9",
-            "colId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
+            "_id": "cd9e3a85-2be1-424a-bb83-72f952cbfab7",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
             "containerId": "",
             "name": "register",
             "url": "http://localhost:3000/adoptionSystem/v1/auth/register",
             "method": "POST",
-            "sortNum": 20000,
-            "created": "2025-02-10T13:08:41.262Z",
-            "modified": "2025-02-10T15:24:37.667Z",
+            "sortNum": 10000,
+            "created": "2025-02-11T13:39:49.440Z",
+            "modified": "2025-02-11T13:39:49.440Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Luis\",\n  \"surname\": \"Luisin\",\n  \"username\": \"LuisK\",\n  \"email\": \"luis@gmail.com\",\n  \"password\": \"luisin027\",\n  \"profilePicture\": \"\",\n  \"phone\": \"87654321\",\n  \"role\": \"USER_ROLE\"\n}",
+                "raw": "{\n  \"name\": \"Carlos\",\n  \"surname\": \"Orozco\",\n  \"username\": \"OrozcoK\",\n  \"email\": \"orozco@gmail.com\",\n  \"password\": \"orozco027\",\n  \"profilePicture\": \"\",\n  \"phone\": \"87654321\",\n  \"role\": \"USER_ROLE\"\n}",
                 "form": []
             }
         },
         {
-            "_id": "b93f838f-1550-4c0b-bb57-e00cc96117f1",
-            "colId": "b9ff33c8-63be-44b6-9abb-31570b902edb",
+            "_id": "d5b24fbf-ca81-4039-8a9e-249a373f5764",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-11T13:40:30.736Z",
+            "modified": "2025-02-11T17:14:36.524Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"alexxo@gmail.com\",\n  \"password\": \"alexxo027\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fc829ba2-0320-486b-b1b1-644671023a7c",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
+            "containerId": "",
+            "name": "getUsers",
+            "url": "http://localhost:3000/adoptionSystem/v1/users?limite=10&desde=0",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-11T13:41:48.832Z",
+            "modified": "2025-02-11T13:41:48.832Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limite",
+                    "value": "10",
+                    "isPath": false
+                },
+                {
+                    "name": "desde",
+                    "value": "0",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "fe4922f7-4569-497b-9631-24effdfa344a",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
+            "containerId": "",
+            "name": "getUserById",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/findUser/67ab52d98089adac5919fbdf",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-11T13:42:19.622Z",
+            "modified": "2025-02-11T13:42:19.622Z",
+            "headers": []
+        },
+        {
+            "_id": "02cb3cf8-1100-4e1e-b3e4-3e326545e495",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
+            "containerId": "",
+            "name": "putUsers",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/67ab537d8089adac5919fbe9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2025-02-11T13:43:33.340Z",
+            "modified": "2025-02-11T13:43:33.340Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Javier\",\n  \"surname\": \"Mula\",\n  \"username\": \"MulaK\",\n  \"email\": \"mula@gmail.com\",\n  \"password\": \"joven027\",\n  \"profilePicture\": \"\",\n  \"phone\": \"55556666\",\n  \"role\": \"USER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cc411d9a-193c-423e-8d02-195d51c80786",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
             "containerId": "",
             "name": "deleteUser",
-            "url": "http://localhost:3000/adoptionSystem/v1/users/67a9fa6bfd2de04c5a7f44e5",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/67ab537d8089adac5919fbe9",
             "method": "DELETE",
-            "sortNum": 30000,
-            "created": "2025-02-10T15:22:37.926Z",
-            "modified": "2025-02-10T15:26:15.834Z",
+            "sortNum": 60000,
+            "created": "2025-02-11T13:44:21.668Z",
+            "modified": "2025-02-11T13:44:21.669Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWEzNWNmODczYjUzZTQzNDEwZDIiLCJpYXQiOjE3MzkyMDExNDQsImV4cCI6MTczOTIwNDc0NH0.J-Ja8W0UN9ZlkRx-w-W51obuomI9aKXS26ukoAPQsdc"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODEzNzgsImV4cCI6MTczOTI4NDk3OH0.1JqOB9-xkDyo7zQSBmKF4bMyoz4PpjPAPY4sh6fsI7A"
                 }
             ]
+        },
+        {
+            "_id": "f79681d2-b05e-4573-8970-459049230900",
+            "colId": "f850aa58-8eee-441f-a752-f09e0eacc836",
+            "containerId": "",
+            "name": "putPassword",
+            "url": "http://localhost:3000/adoptionSystem/v1/users/67ab53118089adac5919fbe3",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2025-02-11T15:03:37.124Z",
+            "modified": "2025-02-11T16:13:28.178Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"orozco027\"\n}",
+                "form": []
+            }
         }
     ],
-    "ref": "lWFfDgCnH9XhE8PQa5AlLGt4iEKeBgRauAR_bKjsF-dHr3JvtZX7Qde1yG8jlNnTV3na-nVx-_8i1Gx4fvnqxg"
+    "ref": "2auZQUkPVdE0dhmKQ0cjRAydunsD8tievsN57dUjuOijrTTZ-mVK-kBEgAYCxdl7nZeRiT74A_H5fqyIlXzPIg"
 }

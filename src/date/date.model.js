@@ -1,24 +1,13 @@
 import { Schema, model } from "mongoose";
 
-const PetSchema = Schema({
-    name: {
+const DateSchema = Schema({
+    date: {
         type: String,
         required: true
     },
 
-    description: {
+    place: {
         type: String,
-        required: true
-    },
-
-    age: {
-        type: Number,
-        required: true
-    },
-
-    type: {
-        type: String,
-        uppercase: true,
         required: true
     },
 
@@ -28,15 +17,23 @@ const PetSchema = Schema({
         required: true
     },
 
+    pet: {
+        type: Schema.Types.ObjectId,
+        ref: 'pet',
+        required: true
+    },
+
     status: {
         type: Boolean,
         default: true
     }
 },
+
     {
         timestamps: true,
         versionKey: false
     }
-);
 
-export default model('Pet', PetSchema);
+)
+
+export default model('Date', DateSchema);

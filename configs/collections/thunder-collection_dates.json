@@ -1,0 +1,33 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "dates",
+    "collectionId": "7f206fc9-85b3-4cb7-a7ee-032b686d41ae",
+    "dateExported": "2025-02-11T17:52:03.191Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cd7290e6-cd02-4c0e-9ba2-8064750341bd",
+            "colId": "7f206fc9-85b3-4cb7-a7ee-032b686d41ae",
+            "containerId": "",
+            "name": "postDate",
+            "url": "http://localhost:3000/adoptionSystem/v1/dates/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-11T17:10:56.286Z",
+            "modified": "2025-02-11T17:49:32.280Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyOTU2MjUsImV4cCI6MTczOTI5OTIyNX0.i6XzLOpmNLp62Mo7GyhBct_1qCr1PkwuOwx2v6ELKlw"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"date\": \"27/12/2005\",\n  \"place\": \"Veterinaria\",\n  \"email\": \"alexxo@gmail.com\",\n  \"name\": \"Tito\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "uKPewcVzxnXLAlK_qn1WCkfMMcrvxKsRCGzTmkAvzhIoOrENkjsNWjvtObMlKBhA_6VFl9UttZiS5JrF19rSMA"
+}

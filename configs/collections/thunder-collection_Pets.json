@@ -1,79 +1,96 @@
 {
     "clientName": "Thunder Client",
-    "collectionName": "Pets",
-    "collectionId": "2ac0bc5d-9a73-4feb-aa28-80c2b0412b29",
-    "dateExported": "2025-02-10T16:34:51.104Z",
+    "collectionName": "pets",
+    "collectionId": "99b5cb97-f0f6-42ae-8108-6e42f6af3d28",
+    "dateExported": "2025-02-11T17:51:56.560Z",
     "version": "1.2",
     "folders": [],
     "requests": [
         {
-            "_id": "f6616f92-bde7-43c1-95a2-b329d8d243c1",
-            "colId": "2ac0bc5d-9a73-4feb-aa28-80c2b0412b29",
+            "_id": "193a1c91-129d-4d7b-8691-8f3f5e837281",
+            "colId": "99b5cb97-f0f6-42ae-8108-6e42f6af3d28",
             "containerId": "",
             "name": "postPet",
             "url": "http://localhost:3000/adoptionSystem/v1/pets/",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2025-02-10T13:23:08.173Z",
-            "modified": "2025-02-10T14:23:59.616Z",
+            "created": "2025-02-11T13:46:13.719Z",
+            "modified": "2025-02-11T13:56:04.756Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5ZmE2YmZkMmRlMDRjNWE3ZjQ0ZTUiLCJpYXQiOjE3MzkxOTQxMTIsImV4cCI6MTczOTE5NzcxMn0.tGOK9LmR3bgeRoDzLSplhHzddeqwI3IbdJY-3KM9qbY"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODIwMjcsImV4cCI6MTczOTI4NTYyN30.F0riXzfspSby4vNBXN1twICKEKAnxj_JFHqwDGWQAbM"
                 }
             ],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Rita\",\n  \"description\": \"Gato de de pelaje negro con blanco\",\n  \"age\": 3,\n  \"type\": \"Gato\",\n  \"email\": \"alexxo@gmail.com\"\n}",
+                "raw": "{\n  \"name\": \"Loky\",\n  \"description\": \"Gato de pelaje gris con negro\",\n  \"age\": 8,\n  \"type\": \"Gato\",\n  \"email\": \"alexxo@gmail.com\"\n}",
                 "form": []
             }
         },
         {
-            "_id": "7dc6150a-2f65-4b49-9067-37d39913fdb3",
-            "colId": "2ac0bc5d-9a73-4feb-aa28-80c2b0412b29",
+            "_id": "737113d1-56f8-4660-8865-d30d15f91a87",
+            "colId": "99b5cb97-f0f6-42ae-8108-6e42f6af3d28",
             "containerId": "",
             "name": "getPets",
             "url": "http://localhost:3000/adoptionSystem/v1/pets/",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2025-02-10T13:48:01.014Z",
-            "modified": "2025-02-10T13:48:26.826Z",
+            "created": "2025-02-11T13:57:06.626Z",
+            "modified": "2025-02-11T13:57:14.156Z",
             "headers": []
         },
         {
-            "_id": "8c042477-c974-4ed7-99d5-17719dfe40bc",
-            "colId": "2ac0bc5d-9a73-4feb-aa28-80c2b0412b29",
+            "_id": "80de45e5-327a-4935-b951-aac68773b86f",
+            "colId": "99b5cb97-f0f6-42ae-8108-6e42f6af3d28",
             "containerId": "",
             "name": "getPetById",
-            "url": "http://localhost:3000/adoptionSystem/v1/pets/67aa0bff35cb166fa32abd42",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/67ab56738089adac5919fbff",
             "method": "GET",
-            "sortNum": 40000,
-            "created": "2025-02-10T14:03:48.205Z",
-            "modified": "2025-02-10T14:24:23.312Z",
+            "sortNum": 30000,
+            "created": "2025-02-11T13:58:44.422Z",
+            "modified": "2025-02-11T13:59:23.816Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5ZmE2YmZkMmRlMDRjNWE3ZjQ0ZTUiLCJpYXQiOjE3MzkxOTYyNTYsImV4cCI6MTczOTE5OTg1Nn0.raB9XgNSCtfHwPZj8TDE9PXFtQ5gKIquWZpAY4eiMUM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODIzNTYsImV4cCI6MTczOTI4NTk1Nn0.Ae7DUGf5QqiIaLP-ixWWdolB41J63fl5xy1hJ99f-JQ"
                 }
             ]
         },
         {
-            "_id": "c29c1832-77c0-41aa-9717-793a2c9311cf",
-            "colId": "2ac0bc5d-9a73-4feb-aa28-80c2b0412b29",
+            "_id": "34b6a663-2500-43ca-a3d6-a1a74f6f575c",
+            "colId": "99b5cb97-f0f6-42ae-8108-6e42f6af3d28",
             "containerId": "",
             "name": "deletePet",
-            "url": "http://localhost:3000/adoptionSystem/v1/pets/67aa0bff35cb166fa32abd42",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/67ab56d38089adac5919fc03",
             "method": "DELETE",
-            "sortNum": 50000,
-            "created": "2025-02-10T14:24:56.617Z",
-            "modified": "2025-02-10T14:25:50.381Z",
+            "sortNum": 40000,
+            "created": "2025-02-11T14:01:00.553Z",
+            "modified": "2025-02-11T14:01:57.972Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5ZmE2YmZkMmRlMDRjNWE3ZjQ0ZTUiLCJpYXQiOjE3MzkxOTc1MDUsImV4cCI6MTczOTIwMTEwNX0.deFYNxNMmIgxvSUKyPp7HAvBtcwqQ50Up705aDgciqo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODI1MDYsImV4cCI6MTczOTI4NjEwNn0.gPFbZUCr1XSmxL-yPb4jOUnvV2PeVfjqtt_-9xZaryE"
                 }
             ]
+        },
+        {
+            "_id": "6040061d-41e4-48cf-8f65-09d9f570543a",
+            "colId": "99b5cb97-f0f6-42ae-8108-6e42f6af3d28",
+            "containerId": "",
+            "name": "putPets",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/67ab56f48089adac5919fc07",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2025-02-11T14:10:09.623Z",
+            "modified": "2025-02-11T15:37:41.742Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Spike\",\n  \"description\": \"Perro de pelaje blanco\",\n  \"age\": 7,\n  \"type\": \"Perro\",\n  \"email\": \"alexxo@gmail.com\"\n}",
+                "form": []
+            }
         }
     ],
-    "ref": "hckAeZ3tH5UMIsu-mPSfhO-WgZaSk_yqanVlUeVVdADm87Xc0yDaWeSWdIuR0X3cd3QVe2723AyeyeXjE984Ag"
+    "ref": "B9sHVw25JJP-jvEP_jzyLijNhOwvQPQHioRWX4BLSghKbS_WJEFGwN53yhjE8udNssMuYSNcBDCp2fkkVJ8OiA"
 }

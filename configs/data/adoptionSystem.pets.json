@@ -1,26 +1,39 @@
 [{
   "_id": {
-    "$oid": "67aa007e1a0330395b0608cf"
+    "$oid": "67ab56738089adac5919fbff"
   },
-  "name": "Loky",
-  "description": "Gato de de pelaje gris y colores obscuros",
-  "age": 4,
-  "type": "NI IDEA",
+  "name": "Tito",
+  "description": "Gato de pelaje negro con blanco",
+  "age": 8,
+  "type": "GATO",
   "keeper": {
-    "$oid": "67a9fa6bfd2de04c5a7f44e5"
+    "$oid": "67ab52d98089adac5919fbdf"
   },
   "status": true
 },
 {
   "_id": {
-    "$oid": "67aa0bff35cb166fa32abd42"
+    "$oid": "67ab56d38089adac5919fc03"
   },
-  "name": "Rita",
-  "description": "Gato de de pelaje negro con blanco",
-  "age": 3,
+  "name": "Akiro",
+  "description": "Gato de pelaje naranja con blanco",
+  "age": 8,
   "type": "GATO",
   "keeper": {
-    "$oid": "67a9fa6bfd2de04c5a7f44e5"
+    "$oid": "67ab52d98089adac5919fbdf"
   },
   "status": false
+},
+{
+  "_id": {
+    "$oid": "67ab56f48089adac5919fc07"
+  },
+  "name": "Spike",
+  "description": "Perro de pelaje blanco",
+  "age": 7,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67ab52d98089adac5919fbdf"
+  },
+  "status": true
 }]
