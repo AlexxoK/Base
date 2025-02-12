@@ -1,0 +1,144 @@
+{
+    "info": {
+        "_postman_id": "05832f47-98e5-404c-ad0c-3557e5990e89",
+        "name": "pets",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "postPet",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/adoptionSystem/v1/pets/",
+                    "path": [
+                        "adoptionSystem",
+                        "v1",
+                        "pets"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "x-token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODIwMjcsImV4cCI6MTczOTI4NTYyN30.F0riXzfspSby4vNBXN1twICKEKAnxj_JFHqwDGWQAbM"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Loky\",\n  \"description\": \"Gato de pelaje gris con negro\",\n  \"age\": 8,\n  \"type\": \"Gato\",\n  \"email\": \"alexxo@gmail.com\"\n}"
+                }
+            }
+        },
+        {
+            "name": "getPets",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/adoptionSystem/v1/pets/",
+                    "path": [
+                        "adoptionSystem",
+                        "v1",
+                        "pets"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "getPetById",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/adoptionSystem/v1/pets/67ab56738089adac5919fbff",
+                    "path": [
+                        "adoptionSystem",
+                        "v1",
+                        "pets",
+                        "67ab56738089adac5919fbff"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "x-token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODIzNTYsImV4cCI6MTczOTI4NTk1Nn0.Ae7DUGf5QqiIaLP-ixWWdolB41J63fl5xy1hJ99f-JQ"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "deletePet",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3000/adoptionSystem/v1/pets/67ab56d38089adac5919fc03",
+                    "path": [
+                        "adoptionSystem",
+                        "v1",
+                        "pets",
+                        "67ab56d38089adac5919fc03"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "x-token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODI1MDYsImV4cCI6MTczOTI4NjEwNn0.gPFbZUCr1XSmxL-yPb4jOUnvV2PeVfjqtt_-9xZaryE"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "putPets",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:3000/adoptionSystem/v1/pets/67ab56f48089adac5919fc07",
+                    "path": [
+                        "adoptionSystem",
+                        "v1",
+                        "pets",
+                        "67ab56f48089adac5919fc07"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Spike\",\n  \"description\": \"Perro de pelaje blanco\",\n  \"age\": 7,\n  \"type\": \"Perro\",\n  \"email\": \"alexxo@gmail.com\"\n}"
+                }
+            }
+        }
+    ]
+}

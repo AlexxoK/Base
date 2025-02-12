@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67acce56cc7d4c264b31faa3"
+  },
+  "date": "27/12/2005",
+  "place": "Veterinaria",
+  "keeper": {
+    "$oid": "67ab52d98089adac5919fbdf"
+  },
+  "pet": {
+    "$oid": "67ab56738089adac5919fbff"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-12T16:37:42.298Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-12T16:37:42.298Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67accedc4af640bbf7bab5a5"
+  },
+  "date": "27/12/2005",
+  "place": "Veterinaria",
+  "keeper": {
+    "$oid": "67ab52d98089adac5919fbdf"
+  },
+  "pet": {
+    "$oid": "67ab56f48089adac5919fc07"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-12T16:39:56.449Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-12T16:39:56.449Z"
+  }
+}]

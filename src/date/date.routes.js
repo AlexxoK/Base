@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { saveDate } from "./date.controller.js";
+import { saveDate, getDates, searchDate } from "./date.controller.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 
@@ -15,6 +15,18 @@ router.post(
         validarCampos
     ],
     saveDate
+)
+
+router.get("/", getDates)
+
+router.get(
+    "/:id",
+    [
+        validarJWT,
+        check("id", "ID invalid!").isMongoId(),
+        validarCampos
+    ],
+    searchDate
 )
 
 export default router;

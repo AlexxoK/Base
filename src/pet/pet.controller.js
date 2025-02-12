@@ -61,7 +61,7 @@ export const getPets = async (req, res) => {
         })
 
     } catch (error) {
-        req.status(500).json({
+        res.status(500).json({
             success: false,
             message: 'Error getting pets!',
             error
