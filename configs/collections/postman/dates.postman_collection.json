@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "02f7f706-f651-4694-859a-e617a7eeefbb",
+		"name": "dates",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41656904"
+	},
+	"item": [
+		{
+			"name": "postDate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkzNzgxNzMsImV4cCI6MTczOTM4MTc3M30.6-WBdLSVo3DYJRKZwcw4_lVuF6LXbtDzjPHLx5xhJMY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"date\": \"27/12/2005\",\n  \"place\": \"Veterinaria\",\n  \"email\": \"alexxo@gmail.com\",\n  \"name\": \"Spike\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/dates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"dates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/dates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"dates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDateById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkzODIwMjQsImV4cCI6MTczOTM4NTYyNH0.NjySjNifEsXx6PcdRGnt_6NwxrhsAxApLx3dE8eX4j8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/dates/67acce56cc7d4c264b31faa3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"dates",
+						"67acce56cc7d4c264b31faa3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putDates",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"27/12/3210\",\r\n  \"place\": \"Parque\",\r\n  \"email\": \"alexxo@gmail.com\",\r\n  \"name\": \"Spike\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/dates/67acce56cc7d4c264b31faa3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"dates",
+						"67acce56cc7d4c264b31faa3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteDate",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3Mzk4MDA4NjIsImV4cCI6MTczOTgwNDQ2Mn0.CB948jd5Fyt5JND02wBI8xraJaHjSwCvnQfJMPf4JoI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/dates/67accedc4af640bbf7bab5a5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"dates",
+						"67accedc4af640bbf7bab5a5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

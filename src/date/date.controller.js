@@ -97,3 +97,48 @@ export const searchDate = async (req, res) => {
         })
     }
 }
+
+export const updateDate = async (req, res = response) => {
+    try {
+        
+        const { id } = req.params;
+        const data = req.body;
+
+        const date = await Date.findByIdAndUpdate(id, data, { new: true });
+
+        res.status(200).json({
+            success: true,
+            msg: 'Date update!',
+            date
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error update!',
+            error
+        })
+    }
+}
+
+export const deleteDate = async (req, res) => {
+    
+    const { id } = req.params;
+
+    try {
+
+        await Date.findByIdAndUpdate(id, { status: false });
+
+        res.status(200).json({
+            success: true,
+            message: 'Date delete success!'
+        })
+        
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: 'Error deleting date!',
+            error
+        })
+    }
+}

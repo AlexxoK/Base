@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "4f547fb2-b74f-4217-bb69-41b1cdf07251",
+		"name": "users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41656904"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Carlos\",\n  \"surname\": \"Orozco\",\n  \"username\": \"OrozcoK\",\n  \"email\": \"orozco@gmail.com\",\n  \"password\": \"orozco027\",\n  \"profilePicture\": \"\",\n  \"phone\": \"87654321\",\n  \"role\": \"USER_ROLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"alexxo@gmail.com\",\n  \"password\": \"alexxo027\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users?limite=10&desde=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "limite",
+							"value": "10"
+						},
+						{
+							"key": "desde",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/findUser/67ab52d98089adac5919fbdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"findUser",
+						"67ab52d98089adac5919fbdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putUsers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Javier\",\n  \"surname\": \"Mula\",\n  \"username\": \"MulaK\",\n  \"email\": \"mula@gmail.com\",\n  \"password\": \"joven027\",\n  \"profilePicture\": \"\",\n  \"phone\": \"55556666\",\n  \"role\": \"USER_ROLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/67ab537d8089adac5919fbe9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"67ab537d8089adac5919fbe9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FiNTJkOTgwODlhZGFjNTkxOWZiZGYiLCJpYXQiOjE3MzkyODEzNzgsImV4cCI6MTczOTI4NDk3OH0.1JqOB9-xkDyo7zQSBmKF4bMyoz4PpjPAPY4sh6fsI7A"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/67ab537d8089adac5919fbe9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"67ab537d8089adac5919fbe9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putPassword",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"orozco027\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/adoptionSystem/v1/users/67ab53118089adac5919fbe3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"users",
+						"67ab53118089adac5919fbe3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
